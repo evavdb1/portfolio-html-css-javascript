@@ -4,6 +4,7 @@
 Inconsistency/layout in the pages is the result of the assignment.*
 ---
 **A website about iconic animals** 
+
 ---
 
 ## Tech Stack
@@ -23,7 +24,7 @@ Inconsistency/layout in the pages is the result of the assignment.*
 
 ## How to Run
 1. Clone the repository
-2. open /html/index.html in web browser
+2. open 'index.html' in web browser
 
 ---
 ```
