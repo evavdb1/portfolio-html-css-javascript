@@ -1,0 +1,149 @@
+/* all pages */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbfad9;
+    margin: 0;
+    color: #3a0b10;
+    font-family: "Merriweather", Georgia, serif;
+}
+
+body.top {
+    margin-top: 80px;
+}
+
+/* container */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* header & logo */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* navigation bar */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #6e0d18;
+    margin-right: 15px;
+    font-weight: bold;
+    text-decoration: none; /* geen onderlijning bij links! */
+}
+
+nav a.current { color: #e62639; }
+nav a:hover { text-decoration: underline; } /* BONUS hover-staten */
+
+nav a:focus { /* BONUS focus-staten */
+    outline: 2px dashed #e62639;
+    outline-offset: 4px;
+}
+
+nav::before {    
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../images/listIcon.svg") no-repeat center / contain; 
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* main */
+main {
+    border-top: 3px dotted #e62639;
+    border-bottom: 3px dotted #e62639;
+    padding: 30px 0;
+}
+
+/* articles */
+article {
+    background-color: rgba(255,165,0,0.25); /* orange 25% transparant */
+    border: 2px solid #6e0d18;
+    border-radius: 50px 0 50px 0; /* LB & RO */
+    padding: 20px;
+    margin-bottom: 30px;
+} 
+
+article img {
+    float: right;
+    max-width: 200px;
+    margin: 0 0 10px 20px;
+}
+
+article::after { /* clear float */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* typography */
+.bold p:first-of-type {
+    font-weight: bold;
+}
+
+.wavy {
+    text-decoration: underline wavy #e62639;
+}
+
+span.dieren {
+    color: #e62639;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+} 
+
+footer p {
+    margin: 5px 0;
+}
+
+/* BONUS kleine schermen (stacked menu) */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    nav::before {
+        display: none;
+    }
+
+    article img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+/* BONUS print-stylesheet */
+@media print {
+    body { background: white; }
+
+    article {
+        background: none;
+        border: 1px solid black;
+    }
+
+    nav, footer { display: none; }
+}
