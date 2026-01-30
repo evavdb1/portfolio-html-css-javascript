@@ -49,28 +49,4 @@ portfolio-html-css-javascript/
 │   │
 │   ├── css/ style_oef3.css 
 │   └── images/...
-│
-├── Project Resume/
-│   ├── index.html
-│   ├── 
-│   ├── 
-│   ├── 
-│   ├── 
-│   ├── 
-│   │
-│   ├── css/
-│   │   ├── style.css
-│   │   └── 
-│   │
-│   ├── js/
-│   │   ├── main.js
-│   │   └── 
-│   │                
-│   └── assests/
-│       ├── images/
-│       │   ├── projects/
-│       │   └── photos/
-│       └── icons/
-│
-└── README.md
 ```
