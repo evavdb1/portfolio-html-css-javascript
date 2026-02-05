@@ -5,7 +5,9 @@
 ---
 
 **A simple dice game**
+
 **A website about iconic animals** 
+
 **A ToDo-list: add and delete tasks**
 
 ---
